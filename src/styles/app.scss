@@ -1,0 +1,78 @@
+html {
+  font-size: $mainFontSize;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $smDesktopWidth) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 12px;
+  }
+}
+body {
+  font-family: $mainFont;
+}
+
+.container {
+  padding: rem(30);
+  background-color: honeydew;
+}
+
+.logo {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  animation: circle 5s infinite linear;
+  -webkit-animation: circle 5s infinite linear;
+}
+
+h1 {
+  font-size: rem(32);
+  text-align: center;
+  font-style: italic;
+}
+
+.cont {
+  margin: 0 auto;
+  width: rem(1000);
+  height: 300px;
+  padding: rem(20);
+  background-color: rosybrown;
+  .inner {
+    background-color: silver;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+a {
+  color: red;
+}
+
+p {
+  color: $primary-color;
+}
+
+span {
+  color: $warning-color;
+  font-weight: bold;
+  //font-family: Roboto;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}

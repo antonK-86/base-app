@@ -1,0 +1,19 @@
+npm instal --save dev
+npm install webpack webpack-cli webpack-dev-server path --save-dev
+npm install @babel/core @babel/preset-env babel-loader @babel/preset-react --save-dev
+npm install style-loader sass-loader node-sass --save-dev
+npm install css-loader mini-css-extract-plugin --save-dev
+npm install postcss-loader css-mqpacker cssnano autoprefixer  --save-dev
+npm install file-loader --save-dev
+npm install copy-webpack-plugin --save-dev
+npm install html-webpack-plugin --save-dev
+npm install clean-webpack-plugin --save-dev
+npm install react react-dom --save
+
+Если требуется разделить webpack.config, то нужно установить webpack-merge
+npm i webpack-merge --save-dev
+
+Cоздаnm 3 файла конфигураций:
+webpack.base.conf.js - базовый для мерджа
+webpack.build.conf.js - конфигурации для билда
+webpack.dev.conf.js - конфигурации для дева
